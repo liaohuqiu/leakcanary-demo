@@ -1,0 +1,44 @@
+# built application files
+.Ds_Store
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+#ide
+*.iml
+
+# generated files
+.gradle/
+bin/
+tmp/
+gen/
+build/
+
+etao.iml
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+/target
+/.idea
+/.settings
+
+# intellj
+sns4android.iml
+
+/sns4android.iml
+/out
+/gen-external-apklibs
+/res-bak
+/proguard_logs/dump.txt
+/proguard_logs/mapping.txt
+/proguard_logs/seeds.txt
+/proguard_logs/usage.txt
