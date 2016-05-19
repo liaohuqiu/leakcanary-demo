@@ -3,6 +3,9 @@
 
     <string name="app_name">LeakCanaryDemo</string>
     <string name="hello_world">Hello world!</string>
-    <string name="go_to_test">Go To Test</string>
+    <string name="go_to_test_with_clear_references">Go *With* Leak</string>
+    <string name="go_to_test_without_clear_references">Go *Without* Leak</string>
+    <string name="warn_with_clear_references">Will *Not* Print Leak Info In logcat(wait 3~5 seconds) When Press Back</string>
+    <string name="warn_without_clear_references">*Will* Print Leak Info In logcat(wait 3~5 seconds) When Press Back</string>
 
 </resources>

@@ -9,10 +9,18 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn_go_to_test"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_go_to_test_with_clear_references"
+        android:layout_above="@+id/btn_go_to_test_without_clear_references"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/go_to_test_with_clear_references" />
+
+
+    <Button
+        android:id="@+id/btn_go_to_test_without_clear_references"
         android:layout_centerInParent="true"
-        android:text="@string/go_to_test" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_test_without_clear_references" />
 
 </RelativeLayout>
