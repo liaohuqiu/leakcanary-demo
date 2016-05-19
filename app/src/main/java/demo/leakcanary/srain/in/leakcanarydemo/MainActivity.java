@@ -14,16 +14,23 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.btn_go_to_test).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_go_to_test_with_clear_references).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToTest();
+                goToTest(true);
+            }
+        });
+        findViewById(R.id.btn_go_to_test_without_clear_references).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToTest(false);
             }
         });
     }
 
-    private void goToTest() {
+    private void goToTest(boolean isClearReferences) {
         Intent intent = new Intent(this, TestActivity.class);
+        intent.putExtra("isClearReferences", isClearReferences);
         startActivity(intent);
     }
 
@@ -37,8 +44,12 @@ public class MainActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.action_go_to_test) {
-            goToTest();
+        if (id == R.id.action_go_to_test_with_clear_references) {
+            goToTest(true);
+            return true;
+        }
+        else if(id == R.id.action_go_to_test_without_clear_references) {
+            goToTest(false);
             return true;
         }
 

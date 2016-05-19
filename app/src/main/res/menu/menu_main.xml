@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
-        android:id="@+id/action_go_to_test"
-        android:title="@string/go_to_test"
+        android:id="@+id/action_go_to_test_with_clear_references"
+        android:title="@string/go_to_test_with_clear_references"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_go_to_test_without_clear_references"
+        android:title="@string/go_to_test_without_clear_references"
         android:orderInCategory="100"
         app:showAsAction="never" />
 </menu>
